@@ -1,0 +1,57 @@
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+.calculator{
+    left: 50%;
+    top: 50%;
+    border-radius: 20px;
+    border: none;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    padding-top: 70px;
+    background: black;
+}
+.calc-screen>input{
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    color: black;
+    background: white;
+    font-size: 20px;
+    padding-right: 5px;
+    border: none;
+}
+.button-class{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+
+}
+button{
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    flex: 1 0 15%;
+    font-size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    background: gray;
+}
+.plus,.minus,.divide,.multiply{
+    background: gold;
+    color: black;
+}
+.clear{
+    background: red;
+    color: white;
+}
