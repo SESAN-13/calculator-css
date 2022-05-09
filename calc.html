@@ -10,32 +10,32 @@
 <body>
     <section class="calculator">
         <div class="calc-screen">
-            <input type="text" value="0" disabled>
+            <input type="text" id="inputtext" placeholder="0" disabled>
         </div>
         <div class="button-class">
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
-            <button type="button"class="plus" value="+">&plus;</button>
+            <button onclick="calculate(1)" type="button" value="1">1</button>
+            <button onclick="calculate(2)" type="button" value="2">2</button>
+            <button onclick="calculate(3)" type="button" value="3">3</button>
+            <button onclick="calculate('+')" type="button"class="plus" value="+">&plus;</button>
 
 
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
-            <button type="button" class="minus" value="-">&minus;</button>
+            <button onclick="calculate(4)" type="button" value="4">4</button>
+            <button onclick="calculate(5)" type="button" value="5">5</button>
+            <button onclick="calculate(6)" type="button" value="6">6</button>
+            <button onclick="calculate('-')" type="button" class="minus" value="-">&minus;</button>
 
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
-            <button type="button" class="multiply" value="*">&times;</button>
-
-
+            <button onclick="calculate(7)" type="button" value="7">7</button>
+            <button onclick="calculate(8)" type="button" value="8">8</button>
+            <button onclick="calculate(9)" type="button" value="9">9</button>
+            <button onclick="calculate('*')" type="button" class="multiply" value="*">&times;</button>
 
 
-            <button type="button" value="AC" class="clear">AC</button>
-            <button type="button" value="0">0</button>
-            <button type="button" value="=">&equals;</button>
-            <button type="button" class="divide" value="/">&divide;</button>
+
+
+            <button onclick="clr()" type="button" value="AC" class="clear">AC</button>
+            <button onclick="calculate(0)" type="button" value="0">0</button>
+            <button onclick="result()" type="button" value="=">&equals;</button>
+            <button onclick="calculate('/')" type="button" class="divide" value="/">&divide;</button>
         </div>
     </section>
 
